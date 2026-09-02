@@ -48,7 +48,6 @@ defineProps({
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
-  max-width: 1440px;
   min-height: 228px;
   padding: 40px var(--page-pad);
   background: var(--color-surface);

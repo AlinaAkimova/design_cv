@@ -257,9 +257,14 @@ const footerLinks = [
 @media (max-width: 1100px) {
   .home-view__hero,
   .home-view :deep(.site-footer) {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
+    gap: 40px;
   }
+
+    .home-view__hero {
+      border-radius: 50px;
+    }
 
   .work-layout {
     flex-direction: column;

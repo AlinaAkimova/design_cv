@@ -85,7 +85,8 @@ defineProps({
 .hero-section__bio {
   position: absolute;
   top: 323px;
-  left: 870px;
+  left: auto;
+  right: 0;
   width: 330px;
   font-family: var(--font-sans);
   font-size: 24px;
@@ -109,7 +110,7 @@ defineProps({
     flex-direction: column;
     gap: 24px;
     min-height: 0;
-    padding-bottom: 40px;
+    padding-bottom: 62px;
   }
 
   .hero-section__greeting,
@@ -122,8 +123,28 @@ defineProps({
     max-width: 100%;
   }
 
+  .hero-section__bio {
+    font-size: 20px;
+  }
+
   .hero-section__photo {
-    height: auto;
+    object-fit: contain;
+    height: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    min-height: 0;
+    padding-bottom: 62px;
+  }
+
+
+  .hero-section__photo {
+    height: 350px;
   }
 }
 </style>
