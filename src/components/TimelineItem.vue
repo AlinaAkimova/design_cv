@@ -56,7 +56,6 @@ defineProps({
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-bottom: 20px;
 }
 
 .timeline-item__row {

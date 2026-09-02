@@ -5,7 +5,7 @@
   <header class="site-header">
     <a
       class="site-header__action"
-      href="/Cv.Akimova-front.pdf"
+      href="/Cv.Akimova-design.pdf"
       target="_blank"
       rel="noopener noreferrer"
     >

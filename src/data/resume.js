@@ -4,6 +4,7 @@ import projectTravel from '@/assets/images/project-travel.png'
 import projectBakery from '@/assets/images/project-bakery.png'
 import projectFrontend from '@/assets/images/project-frontend.png'
 import experimentCjm from '@/assets/images/experiment-cjm.png'
+import experiment from '@/assets/images/experiment.jpg'
 import experimentMockup1 from '@/assets/images/experiment-mockup-1.png'
 import experimentMockup2 from '@/assets/images/experiment-mockup-2.png'
 import school21 from '@/assets/icons/school21.svg'
@@ -41,7 +42,7 @@ export const aboutParagraphs = [
 
 export const designReasonParagraphs = [
   'Работая с интерфейсами на этапе разработки, я всё больше интересовалась тем, почему продукт устроен именно так и как можно сделать взаимодействие с ним проще.',
-  'Я поняла, что хочу участвовать в создании продукта ещё до этапа разработки — исследовать задачи пользователей, продумывать сценарии и искать решения. Это привело меня в дизайн.'
+  'Я поняла, что хочу участвовать в создании продукта ещё до этапа разработки — исследовать задачи пользователей, продумывать сценарии и искать решения, удобные в использовании и реализуемые технически. Это привело меня в дизайн.'
 ]
 
 export const education = [
@@ -115,7 +116,6 @@ export const projects = [
     image: projectTravel,
     imageHeight: 550,
     title: 'Мобильное приложение для планирования путешествий',
-    description: '// поиск мест, сохранение находок и планирование поездки в одном приложении',
     href: '/projects/travel'
   },
   {
@@ -124,16 +124,14 @@ export const projects = [
     image: projectBakery,
     imageHeight: 432,
     title: 'Сайт пекарни с оформлением заказа',
-    description: '// сайт для знакомства с пекарней, просмотра меню и оформления заказа.',
     href: '/projects/bakery'
   },
   {
     index: '03',
     tags: 'UX/UI · Responsive · Frontend',
     image: projectFrontend,
-    imageHeight: 448,
+    imageHeight: 380,
     title: 'Сайт-визитка фронтенд-разработчика',
-    description: '// персональный сайт, разработанный с нуля во время работы фронтенд-разработчиком',
     href: '/projects/front'
   }
 ]
@@ -144,17 +142,14 @@ export const experiments = [
     tags: 'UX/UI · fonts · viewing experience',
     title: 'Учебные наработки',
     href: '#',
-    collage: {
-      background: experimentCjm,
-      front: experimentMockup1,
-      back: experimentMockup2
-    },
+    image: experiment,
     bullets: [
       'Daily UI;',
       'шрифты на разные случаи;',
       'CJM, User Flow и персона пользователя приложения “Самокат”;',
       'разбор сайта по Heuristic evaluation'
-    ]
+    ],
+    href: 'https://www.figma.com/design/CFW18MTpbkgRbOoQ0s6OIT/UX-UI-study?node-id=1-3&t=X6KqnU5XjtyHRkvA-1'
   }
 ]
 

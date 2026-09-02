@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-  <a class="text-link" :href="href">
+  <a class="text-link" :href="href" target="_blank">
     <slot />
   </a>
 </template>

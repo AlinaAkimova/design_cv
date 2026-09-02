@@ -25,7 +25,7 @@ import {
 
 const footerLinks = [
   { label: 'Проекты', href: '#projects' },
-  { label: 'Резюме', href: '#resume' }
+  { label: 'Резюме', href: '/Cv.Akimova-design.pdf' }
 ]
 </script>
 
@@ -67,7 +67,7 @@ const footerLinks = [
           <DetailList title="/задачи" :items="workDetails.tasks" />
           <DetailList title="/технологии" :items="workDetails.technologies" />
           <DetailList title="/что мне это даёт" :text="workDetails.outcome" />
-          <TextLink href="/Cv.Akimova-front.pdf" target="_blank"">смотреть резюме с подробностями→</TextLink>
+          <TextLink href="/Cv.Akimova-front.pdf" target="_blank"">смотреть резюме фронтендера →</TextLink>
           
         </div>
       </div>
