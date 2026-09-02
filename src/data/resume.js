@@ -125,7 +125,7 @@ export const projects = [
     imageHeight: 432,
     title: 'Сайт пекарни с оформлением заказа',
     description: '// сайт для знакомства с пекарней, просмотра меню и оформления заказа.',
-    href: '#'
+    href: '/projects/bakery'
   },
   {
     index: '03',

@@ -6,18 +6,27 @@ defineProps({
   },
   hex: {
     type: String,
-    required: true
+    default: ''
   },
   color: {
     type: String,
     required: true
+  },
+  labeled: {
+    type: Boolean,
+    default: false
+  },
+  square: {
+    type: Boolean,
+    default: false
   }
 })
 </script>
 
 <template>
-  <div class="color-swatch">
+  <div class="color-swatch" :class="{ 'color-swatch--labeled': labeled, 'color-swatch--square': square }">
     <span class="color-swatch__chip" :style="{ background: color }" />
+    <p v-if="labeled" class="color-swatch__name">{{ name }}</p>
   </div>
 </template>
 
@@ -27,6 +36,16 @@ defineProps({
   flex-direction: column;
   gap: 16px;
   width: 72px;
+}
+
+.color-swatch--labeled {
+  gap: 24px;
+  width: auto;
+  min-width: 70px;
+}
+
+.color-swatch--square .color-swatch__chip {
+  border-radius: 0;
 }
 
 .color-swatch__chip {
