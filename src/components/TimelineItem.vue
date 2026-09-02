@@ -34,31 +34,44 @@ defineProps({
 </script>
 
 <template>
-  <article class="timeline-item" :class="{ 'timeline-item--divided': divided }">
-    <BrandAsset
-      :src="logo"
-      :alt="logoAlt"
-      :width="logoWidth"
-      :height="logoHeight"
-    />
-    <div class="timeline-item__text">
-      <p class="timeline-item__dates">{{ dates }}</p>
-      <p class="timeline-item__title">{{ title }}</p>
+  <article class="timeline-item">
+    <div class="timeline-item__row">
+      <BrandAsset
+        :src="logo"
+        :alt="logoAlt"
+        :width="logoWidth"
+        :height="logoHeight"
+      />
+      <div class="timeline-item__text">
+        <p class="timeline-item__dates">{{ dates }}</p>
+        <p class="timeline-item__title">{{ title }}</p>
+      </div>
     </div>
+    <span v-if="divided" class="timeline-item__divider" />
   </article>
 </template>
 
 <style scoped>
 .timeline-item {
   display: flex;
-  align-items: flex-start;
-  gap: 28px;
+  flex-direction: column;
   width: 100%;
   padding-bottom: 20px;
 }
 
-.timeline-item--divided {
-  border-bottom: 1px dashed var(--color-muted);
+.timeline-item__row {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  width: 100%;
+}
+
+.timeline-item__divider {
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+  height: 1px;
+  background-image: repeating-linear-gradient(to right, rgba(0, 0, 0, 0.3) 0 6px, transparent 6px 10px);
 }
 
 .timeline-item__text {

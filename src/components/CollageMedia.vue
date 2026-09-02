@@ -41,7 +41,6 @@ defineProps({
 }
 
 .collage-media__bg {
-  left: -58px;
   top: -15px;
   width: 1189px;
   height: 684px;
