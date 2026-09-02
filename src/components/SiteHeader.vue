@@ -1,11 +1,12 @@
 <script setup>
+const baseUrl = import.meta.env.BASE_URL
 </script>
 
 <template>
   <header class="site-header">
     <a
       class="site-header__action"
-      :href="`${import.meta.env.BASE_URL}Cv.Akimova-design.pdf`"
+      :href="`${baseUrl}Cv.Akimova-design.pdf`"
       target="_blank"
       rel="noopener noreferrer"
     >

@@ -27,6 +27,8 @@ const footerLinks = [
   { label: 'Проекты', href: '#projects' },
   { label: 'Резюме', href: `${import.meta.env.BASE_URL}Cv.Akimova-design.pdf` }
 ]
+
+const baseUrl = import.meta.env.BASE_URL
 </script>
 
 <template>
@@ -67,7 +69,7 @@ const footerLinks = [
           <DetailList title="/задачи" :items="workDetails.tasks" />
           <DetailList title="/технологии" :items="workDetails.technologies" />
           <DetailList title="/что мне это даёт" :text="workDetails.outcome" />
-          <TextLink :href="`${import.meta.env.BASE_URL}/Cv.Akimova-front.pdf`" target="_blank"">смотреть резюме фронтендера →</TextLink>
+          <TextLink :href="`${baseUrl}/Cv.Akimova-front.pdf`" target="_blank"">смотреть резюме фронтендера →</TextLink>
           
         </div>
       </div>
