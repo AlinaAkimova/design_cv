@@ -1,5 +1,5 @@
-import heroLeft from '@/assets/images/front-case/hero-left.jpg'
-import heroRight from '@/assets/images/front-case/hero-right.jpg'
+import heroLeft from '@/assets/images/front-case/hero-left.webp'
+import heroRight from '@/assets/images/front-case/hero-right.webp'
 import webIcon from '@/assets/icons/web.svg'
 import gitIcon from '@/assets/icons/git.svg'
 
