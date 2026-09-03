@@ -69,7 +69,7 @@ const baseUrl = import.meta.env.BASE_URL
           <DetailList title="/задачи" :items="workDetails.tasks" />
           <DetailList title="/технологии" :items="workDetails.technologies" />
           <DetailList title="/что мне это даёт" :text="workDetails.outcome" />
-          <TextLink :href="`${baseUrl}/Cv.Akimova-front.pdf`" target="_blank"">смотреть резюме фронтендера →</TextLink>
+          <TextLink :href="`${baseUrl}/Cv.Akimova-front.pdf`" target="_blank">смотреть резюме фронтендера →</TextLink>
           
         </div>
       </div>
