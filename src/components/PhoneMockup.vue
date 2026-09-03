@@ -32,4 +32,10 @@ defineProps({
   height: 100%;
   object-fit: cover;
 }
+
+@media (max-width: 600px) {
+  .phone-mockup {
+    width: 50%;
+  }
+}
 </style>

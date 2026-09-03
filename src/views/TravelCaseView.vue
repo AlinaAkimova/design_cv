@@ -137,10 +137,16 @@ import { travelCase as page } from '@/data/travelCase'
           <p class="travel-case__panel-note">
             Use color tokens instead of custom values. All colors are defined as variables.
           </p>
-          <p class="travel-case__swatch-label">Brand</p>
-          <div class="travel-case__swatches">
-            <ColorSwatch v-for="swatch in page.guideline.colors.brand" :key="swatch.name" v-bind="swatch" />
-          </div>
+          <div>
+              <p class="travel-case__swatch-label">Brand</p>
+              <div class="travel-case__swatches">
+                <ColorSwatch
+                  v-for="swatch in page.guideline.colors.brand"
+                  :key="swatch.name"
+                  v-bind="swatch"
+                />
+              </div>
+            </div>
           <div class="travel-case__swatch-groups">
             <div>
               <p class="travel-case__swatch-label">Categories</p>
@@ -606,6 +612,15 @@ import { travelCase as page } from '@/data/travelCase'
 
   .travel-case__arrow {
     transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .travel-case__type-col {
+    display: none;
+  }
+  .travel-case__type-col--sample {
+    display: flex;
   }
 }
 </style>
